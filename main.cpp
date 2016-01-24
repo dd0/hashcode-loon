@@ -19,16 +19,19 @@ int main()
 	loadData("loon.in");
 	cout << data.n << " " << data.m << endl;
 	cout << data.time << endl;
-	cout << data.baloons;
+	cout << data.baloons << endl;
 
     state *stanje=new state(data);
 
 
 
     pair <int,walker> balon;
-    balon.second.life;
 
-    balon=balon.second.generate_random_walker(10,10,-1,400,*stanje);
+    balon=balon.second.generate_better_walker(10,10,-1,0,400,*stanje);
+    printf("DID GENERATE\n");
+    for (int i=0; i<balon.second.life; i++)
+        printf("[%d] %d %d %d\n",i,balon.second.pos[i].first.i,balon.second.pos[i].first.j,balon.second.pos[i].second);
+    printf("%d\n",balon.first);
     delete stanje;
     return 0;
 }

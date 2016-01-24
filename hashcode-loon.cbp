@@ -32,7 +32,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="data.cpp" />
+		<Unit filename="data.h" />
+		<Unit filename="didi.cpp" />
+		<Unit filename="didi.h" />
+		<Unit filename="file.cpp" />
+		<Unit filename="file.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="state.cpp" />
+		<Unit filename="state.h" />
+		<Unit filename="walker.cpp" />
+		<Unit filename="walker.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

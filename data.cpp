@@ -33,7 +33,6 @@ tile inputData :: get_next_tile (tile curr, int h)
         return curr;
     tile ret;
     ret=curr;
-    printf(">>%d %d %d\n",h,curr.i,curr.j);
     ret.i+=wind[h].di[curr.i][curr.j];
     ret.j+=wind[h].dj[curr.i][curr.j];
     if (ret.j>=m)
