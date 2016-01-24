@@ -27,6 +27,9 @@
 *.out
 *.app
 
+# input files
+*.in
+
 # Ignore the build and lib dirs
 build
 lib/*
