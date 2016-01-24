@@ -8,6 +8,7 @@ pair<vector<int>, vector<int>> podeli(vector<int> &a)
 			x.push_back(a[i]);
 		else
 			y.push_back(a[i]);
+	return pair<vector<int>, vector<int>>(x,y);
 }
 
 vector<int> merge_sort(vector<int> &a)
