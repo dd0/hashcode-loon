@@ -15,5 +15,7 @@ vector<int> merge_sort(vector<int> &a)
 {
 	if(a.size() <= 1) return a;
 	auto x = podeli(a);
-	return spoji(merge_sort(x.first), merge_sort(x.second));
+	x.first=merge_sort(x.first);
+	x.second=merge_sort(x.second);
+	return spoji(x.first, x.second);
 }
