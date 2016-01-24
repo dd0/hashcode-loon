@@ -26,6 +26,7 @@ struct inputData
 	vector<tile> targets; // tiles we want to hit
 	tile start; // tile where the baloons start
 	vector<windGrid> wind; // wind movement grids
+	tile get_next_tile (tile curr,int h);
 } ;
 
 extern inputData data;

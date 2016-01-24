@@ -26,3 +26,25 @@ void loadData(const char *fname)
 		delete g;
 	}
 }
+
+tile inputData :: get_next_tile (tile curr, int h)
+{
+    if (h<0)
+        return curr;
+    tile ret;
+    ret=curr;
+    printf(">>%d %d %d\n",h,curr.i,curr.j);
+    ret.i+=wind[h].di[curr.i][curr.j];
+    ret.j+=wind[h].dj[curr.i][curr.j];
+    if (ret.j>=m)
+        ret.j-=m;
+    if (ret.j<0)
+        ret.j+=m;
+    if (ret.i<0 || ret.i>=n)
+    {
+        ret.i=-1;
+        ret.j=-1;
+        return ret;
+    }
+    return ret;
+}

@@ -1,20 +1,52 @@
 # depslib dependency file v1.0
-1453656434 source:d:\git repositories\hashcode-loon\didi.cpp
+1453658663 source:d:\git repositories\hashcode-loon\didi.cpp
 	"didi.h"
 
-1453656505 source:d:\git repositories\hashcode-loon\file.cpp
+1453658663 source:d:\git repositories\hashcode-loon\file.cpp
 	"file.h"
 
-1453654221 source:d:\git repositories\hashcode-loon\main.cpp
+1453671462 source:d:\git repositories\hashcode-loon\main.cpp
 	"didi.h"
 	"file.h"
+	"data.h"
+	"walker.h"
+	"state.h"
 	<cstdio>
+	<iostream>
+	<vector>
+	<ctime>
+	<algorithm>
+
+1453658663 d:\git repositories\hashcode-loon\didi.h
+
+1453658663 d:\git repositories\hashcode-loon\file.h
+
+1453670676 source:d:\git repositories\hashcode-loon\data.cpp
+	"data.h"
+
+1453662913 d:\git repositories\hashcode-loon\data.h
+	<vector>
+	<fstream>
+
+1453670524 source:d:\git repositories\hashcode-loon\state.cpp
+	"state.h"
+	<algorithm>
+	<cstring>
+
+1453669932 d:\git repositories\hashcode-loon\state.h
+	"walker.h"
+	"data.h"
 	<vector>
 
-1453655885 d:\git repositories\hashcode-loon\didi.h
-	<vector>
-	"file.h"
+1453664888 d:\git repositories\hashcode-loon\random_walker.h
 
-1453654086 d:\git repositories\hashcode-loon\file.h
+1453667882 d:\git repositories\hashcode-loon\walker.h
 	<vector>
+	"data.h"
+	"state.h"
+
+1453671519 source:d:\git repositories\hashcode-loon\walker.cpp
+	"walker.h"
+	"data.h"
+	<algorithm>
 
