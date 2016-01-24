@@ -1,9 +1,8 @@
 # depslib dependency file v1.0
-1453654311 source:d:\git repositories\hashcode-loon\didi.cpp
+1453656434 source:d:\git repositories\hashcode-loon\didi.cpp
 	"didi.h"
-	<vector>
 
-1453654909 source:d:\git repositories\hashcode-loon\file.cpp
+1453656505 source:d:\git repositories\hashcode-loon\file.cpp
 	"file.h"
 
 1453654221 source:d:\git repositories\hashcode-loon\main.cpp

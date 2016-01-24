@@ -6,7 +6,7 @@ vector <int> spoji (vector <int> &a,vector <int> &b)
     auto ita=a.begin(), itb=b.begin();
     while (ita!=a.end() || itb!=b.end())
     {
-        if (itb==b.end() || (ita!=a.end() && (*ita)>(*itb)))
+        if (ita==a.end() || (ita!=a.end() && (*ita)>(*itb)))
             ret.push_back(*itb), itb++;
         else
             ret.push_back(*ita), ita++;
