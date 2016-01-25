@@ -7,6 +7,8 @@
 #include <vector>
 using namespace std;
 
+struct walker;
+
 struct state
 {
     state () {};
@@ -16,12 +18,12 @@ struct state
     int rad; //coverage radius
     int h; //height
 
-    int times_covered [75][305][405];
-    int score_per_visit [75][305];
+    int times_covered [80][305][405];
+    int score_per_visit [80][305];
   //  vector <walker> loons;
 
     int get_score_change(int x,int y,int time,int action,int make_change);
-
+    void implement_walker (walker balon,int action);
 };
 
 #endif // _STATE_H

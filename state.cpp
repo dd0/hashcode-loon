@@ -48,3 +48,11 @@ state :: state (inputData const &in)
     for (unsigned int i=0; i<in.targets.size(); i++)
         score_per_visit[in.targets[i].i][in.targets[i].j]=1;
 }
+void state :: implement_walker (walker balon,int action)
+{
+    for (int i=0; i<balon.life; i++)
+    {
+        //printf("changed %d\n",i);
+        get_score_change(balon.pos[i].first.i,balon.pos[i].first.j,i,action,1);
+    }
+}

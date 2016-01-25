@@ -11,7 +11,7 @@ pair <int,walker> walker :: generate_random_walker(int sx,int sy,int sh,int st,i
     ret.life=0;
     tile cpos= {sx,sy};
     int ch=sh;
-    while (cpos.i!=-1 && ret.life<ttl)
+    while (cpos.i!=-1 && ret.life<=ttl)
     {
         int pmove[3];
         int pcnt=0;
@@ -27,14 +27,8 @@ pair <int,walker> walker :: generate_random_walker(int sx,int sy,int sh,int st,i
             cscore+=curr.get_score_change(cpos.i,cpos.j,ret.life+st,1,0);
 
         ret.life++;
-        if (ttl==1)
-            printf("in\n");
         cpos=data.get_next_tile(cpos,ch);
-        if (ttl==1)
-            printf("OUT\n");
     }
-    if (ttl==1)
-        printf("Really out\n");
     return {cscore,ret};
 }
 
@@ -46,7 +40,7 @@ pair <int,walker> walker :: generate_better_walker(int sx,int sy,int sh,int st,i
     tile cpos= {sx,sy};
     int ch=sh;
     pair <int,walker> cand,cand2;
-    while (cpos.i!=-1 && ret.life+1<ttl)
+    while (cpos.i!=-1 && ret.life<ttl)
     {
         cand=generate_random_walker(cpos.i,cpos.j,ch,ret.life,ttl-ret.life,curr);
         for (int it=1; it<MAX_BETTER_ATT; it++)

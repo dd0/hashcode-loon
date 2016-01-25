@@ -1,7 +1,7 @@
 #ifndef _WALKER_H
 
 #define _WALKER_H
-#define MAX_BETTER_ATT 5
+#define MAX_BETTER_ATT 30
 #include <vector>
 #include "data.h"
 #include "state.h"
